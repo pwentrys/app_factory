@@ -1,5 +1,6 @@
 from flask import render_template
 from flask_cors import cross_origin
+from exts.graphs import setup as graphs
 
 
 def setup(app):
@@ -109,5 +110,7 @@ def setup(app):
         """
 
         return render_template('errors/500.html', title=app.title), 500
+
+    app = graphs(app)
 
     return app
