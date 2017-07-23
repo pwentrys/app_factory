@@ -14,3 +14,7 @@ def run(app):
         debug=app.DEBUG,
         threaded=app.THREADED
     )
+
+if __name__ == '__main__':
+    from app import app
+    run(app)
