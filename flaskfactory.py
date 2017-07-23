@@ -91,7 +91,12 @@ class FlaskFactory:
         return timedelta(days=SESSION_LIFETIME)
 
     @staticmethod
-    def create(name: str, address: str, port: int, debug: bool, threaded: bool) -> Flask:
+    def create(
+            name: str,
+            address: str,
+            port: int,
+            debug: bool,
+            threaded: bool) -> Flask:
         """
         Create and return flask app.
         :param name:

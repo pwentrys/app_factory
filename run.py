@@ -20,6 +20,7 @@ def run(app):
         threaded=app.THREADED
     )
 
+
 if __name__ == '__main__':
     from app import app
     run(app)
