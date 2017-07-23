@@ -33,7 +33,7 @@ def setup(app):
         """
 
         return render_template('default.html',
-                               title=app.__name__,
+                               title=app.title,
                                html=f"""
                                Test
                                """
@@ -70,7 +70,7 @@ def setup(app):
         :return:
         """
 
-        return render_template('errors/403.html', title=app.__name__), 403
+        return render_template('errors/403.html', title=app.title), 403
 
     @app.errorhandler(404)
     @cross_origin()
@@ -81,7 +81,7 @@ def setup(app):
         :return:
         """
 
-        return render_template('errors/404.html', title=app.__name__), 404
+        return render_template('errors/404.html', title=app.title), 404
 
     @app.errorhandler(410)
     @cross_origin()
@@ -92,7 +92,7 @@ def setup(app):
         :return:
         """
 
-        return render_template('errors/410.html', title=app.__name__), 410
+        return render_template('errors/410.html', title=app.title), 410
 
     @app.errorhandler(500)
     @cross_origin()
@@ -103,6 +103,6 @@ def setup(app):
         :return:
         """
 
-        return render_template('errors/500.html', title=app.__name__), 500
+        return render_template('errors/500.html', title=app.title), 500
 
     return app
