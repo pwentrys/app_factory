@@ -14,4 +14,3 @@ def run(app):
         debug=app.DEBUG,
         threaded=app.THREADED
     )
-    app.sql.close()
