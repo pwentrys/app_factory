@@ -8,7 +8,7 @@ from datetime import timedelta
 
 from flask import Flask
 
-from config.configuration import DEBUG, SESSION_LIFETIME, STATIC, TEMPLATES
+from config.configuration import SESSION_LIFETIME, STATIC, TEMPLATES
 import base64
 
 # --------------------------------------------------------------------------- #
@@ -45,7 +45,7 @@ class FlaskFactory:
         return ' '.join(formatted)
 
     @staticmethod
-    def create(name: str) -> Flask:
+    def create(name: str, address: str, port: int, debug: bool, threaded: bool) -> Flask:
         app = Flask(
             name.lower(),
             static_url_path='',
@@ -57,11 +57,15 @@ class FlaskFactory:
         app.__name__ = display_name
         app.title = display_name
         app.config.from_object(name.lower())
+        app.DEBUG = debug
+        app.HOST = address
+        app.PORT = port
+        app.THREADED = threaded
 
         app.config.update(
             SESSION_COOKIE_DOMAIN=name,
             SESSION_COOKIE_NAME=name,
-            DEBUG=DEBUG
+            DEBUG=debug
         )
 
         app.secret_key = str(
