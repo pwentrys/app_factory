@@ -11,3 +11,4 @@ STATIC = join(RESOURCES, 'static')
 TEMPLATES = join(RESOURCES, 'templates')
 DEBUG = True
 SESSION_LIFETIME = 1
+THREADED = True
