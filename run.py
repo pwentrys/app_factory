@@ -7,6 +7,11 @@ from routes import setup
 #                                                                             #
 # --------------------------------------------------------------------------- #
 def run(app):
+    """
+    Starts serving them webs.
+    :param app:
+    :return:
+    """
     app = setup(app)
     app.run(
         host=app.HOST,
