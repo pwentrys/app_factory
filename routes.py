@@ -3,6 +3,11 @@ from flask_cors import cross_origin
 
 
 def setup(app):
+    """
+    Setup routes on app obj.
+    :param app:
+    :return:
+    """
     @app.route('/')
     @app.route('/index')
     @app.route('/index/')
