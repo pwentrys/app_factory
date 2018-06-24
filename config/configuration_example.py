@@ -1,11 +1,11 @@
 from os.path import join
-import sys
+from sys import path
 
 
 NAME = 'App'
-IP = 'QUARTET'
+IP = '0.0.0.0'
 PORT = 9001
-PROJECT = sys.path[0]
+PROJECT = path[0]
 RESOURCES = join(PROJECT, 'resources')
 STATIC = join(RESOURCES, 'static')
 TEMPLATES = join(RESOURCES, 'templates')
