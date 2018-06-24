@@ -22,5 +22,5 @@ def run(app):
 
 
 if __name__ == '__main__':
-    from app import app
-    run(app)
+    from app import app as _app
+    run(_app)
