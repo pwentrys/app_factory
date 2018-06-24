@@ -1,8 +1,8 @@
 # App Factory
-Factory for app magics.
+Factory for creating Flask apps.
 
 # Python Requirements (See requirements.txt)
 Built on Python 3.6.2.
 
-# Wat It Do (1)
-- Flask
+# Functions
+- Flask Website
