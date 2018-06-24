@@ -4,7 +4,7 @@ from sys import path
 
 NAME = 'App'
 IP = '0.0.0.0'
-PORT = 9001
+PORT = 80
 PROJECT = path[0]
 RESOURCES = join(PROJECT, 'resources')
 STATIC = join(RESOURCES, 'static')
