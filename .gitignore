@@ -1,7 +1,7 @@
 # unity/
 # Byte-compiled / optimized / DLL files
-*configuration.py
-*credentials.py
+#*configuration.py
+#*credentials.py
 # C extensions
 # Distribution / packaging
 # PyInstaller
