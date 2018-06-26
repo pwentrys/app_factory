@@ -1,3 +1,15 @@
+a:link {
+    padding: 14px;
+    background-color: #424242;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+}
 body {
     padding: 24px;
     background-color: #424242;

@@ -34,14 +34,22 @@ def setup(app):
     @cross_origin()
     def home():
         """
-
+        Default landing page.
         :return:
         """
-
         return render_template('default.html',
                                title=app.title,
                                html=f"""
-                               Test
+                               <center>
+                               Hire please.
+                               <br>
+                               <br>
+                               <div id="route_row_github">
+                                    <div id="route_row_github__name" style="display: table-cell;">
+                                        <a href="http://www.github.com/pwentrys" target="_blank">Github</a>
+                                    </div>
+                               </div>
+                               </center>
                                """
                                )
 
@@ -50,7 +58,7 @@ def setup(app):
     @cross_origin()
     def routes():
         """
-
+        lists all routes.
         :return:
         """
         items = []
